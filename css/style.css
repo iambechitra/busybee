@@ -1,0 +1,935 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+@font-face{
+    src:url(../font/OpenSans-Regular.ttf);
+    font-family:osr;
+}
+@font-face{
+    src: url(../font/OpenSans-SemiBold.ttf);
+    font-family:ossb;
+}
+@font-face{
+    src:url(../font/OpenSans-ExtraBold.ttf);
+    font-family:oseb;
+}
+@font-face{
+    src:url(../font/Satisfy-Regular.ttf);
+    font-family: sr;
+}
+.full-wrapper{
+    width:100%;
+}
+.wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+/*========================== header css start============= */
+.logo{
+    width: 180px;
+    float: left;
+}
+.logo img{
+    padding-top: 32px;
+}
+.menu{
+    width: 960px;
+    float: left;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li ul li a{
+    font-family: osr;
+    font-size: 15px;
+    line-height: 50px;
+}
+.menu ul li ul{
+    text-align: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.21);
+    width: 120px;
+    left: 0px;
+    visibility: hidden;
+}
+.menu form{
+    display: inline-block;
+}
+.menu ul li ul li{
+    width: 100%;
+}
+.menu ul li:hover > ul{
+    cursor: pointer;
+    visibility: visible;
+}
+.menu ul li a{
+    display: block;
+    color: #000000;
+    font-size: 15px;
+    font-family: osr;
+    line-height: 100px;
+    padding: 0 25px;
+    transition: all linear .3s;
+    border-bottom: 3px solid transparent;
+}
+.menu ul li a:hover{
+    color: #f34949;
+    border-bottom: 3px solid #f34949;
+}
+.menu ul li input{
+    width:170px;
+    height: 30px;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+/*============================== header css end================= */
+
+/*============================== banner css start================= */
+.banner-bg{
+    padding-top: 130px;
+    padding-bottom: 170px; 
+    width: 100%;
+    background: url(../images/Resto_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header-text{
+    text-align: center;
+}
+.header-text h1{
+    font-family: sr;
+    font-size: 63px;
+    color: #fff;
+}
+.header-text span{
+    color: #f34949;
+}
+.header-text p{
+    line-height: 36px;
+    font-family: sr;
+    font-size: 28px;
+    color: #fff;
+    padding: 0 370px;
+    padding-top: 17px;
+    padding-bottom: 72px;
+}
+.header-text a{
+    color: #ffffff;
+    font-family: ossb;
+    padding: 22px 42px;
+    border: 3px solid #ffffff;
+    border-radius: 6px;
+    transition: all linear .3s;
+}
+.header-text a:hover{
+    background: #f34949;
+}
+
+/*============================== banner css end================= */
+
+/* =========== service part css start=========================*/
+.service{
+    margin-top: 105px;
+}
+.service-item1{
+    text-align: center;
+    width: 25%;
+    padding-bottom: 95px;
+    float: left; 
+    overflow: hidden;
+}
+.service-item1 img{
+    width: 100%;
+    transition: all linear .3s;
+}
+.service-item2 img{
+    width: 100%;
+    transition: all linear .3s;
+}
+.service-item3 img{
+    width: 100%;
+    transition: all linear .3s;
+}
+.service-item1 img:hover{
+    transform: scale(1.3);
+}
+.service-item1 i{
+    line-height: 100px;
+    font-size: 40px;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    border: 3px solid #f34949;
+    color: #f34949;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.service-item1 i:hover{
+    color: #ffffff;
+    background: #f34949;
+}
+.service-item1 h2{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: osr;
+    font-size: 23px;
+    color: #4e525d;
+}
+.service-item1 p{
+    line-height: 26px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+    padding-bottom: 20px;
+}
+.service-item1 a{
+    font-size: 14px;
+    font-family: osr;
+    display:inline-block;
+    padding: 10px 15px;
+    background: #f34949;
+    border-radius: 3px;
+    color: #fff;
+}
+/*=========================== */
+.service-item2{
+    text-align: center;
+    width: 25%;
+    padding-bottom: 95px;
+    float: left;
+    overflow: hidden;
+}
+.service-item2 i{
+    line-height: 100px;
+    font-size: 40px;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    border: 3px solid #f34949;
+    color: #f34949;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.service-item2 i:hover{
+    color: #ffffff;
+    background: #f34949;
+}
+.service-item2 h2{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: osr;
+    font-size: 23px;
+    color: #4e525d;
+}
+.service-item2 p{
+    line-height: 26px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+    padding-bottom: 20px;
+}
+.service-item2 a{
+    font-size: 14px;
+    font-family: osr;
+    display:inline-block;
+    padding: 10px 15px;
+    background: #f34949;
+    border-radius: 3px;
+    color: #fff;
+}
+/*===================================*/
+.service-item3{
+    text-align: center;
+    width: 25%;
+    padding-bottom: 95px;
+    float: left;
+    overflow: hidden;
+}
+.service-item3 i{
+    line-height: 100px;
+    font-size: 40px;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    border: 3px solid #f34949;
+    color: #f34949;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.service-item3 i:hover{
+    color: #ffffff;
+    background: #f34949;
+}
+.service-item3 h2{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: osr;
+    font-size: 23px;
+    color: #4e525d;
+}
+.service-item3 p{
+    line-height: 26px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+    padding-bottom: 20px;
+}
+.service-item3 a{
+    font-size: 14px;
+    font-family: osr;
+    display:inline-block;
+    padding: 10px 15px;
+    background: #f34949;
+    border-radius: 3px;
+    color: #fff;
+}
+/*============================= */
+.service-item4{
+    text-align: center;
+    width: 25%;
+    padding-bottom: 95px;
+    float: left;
+}
+.service-item4 i{
+    line-height: 100px;
+    font-size: 40px;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    border: 3px solid #f34949;
+    color: #f34949;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.service-item4 i:hover{
+    color: #ffffff;
+    background: #f34949;
+}
+.service-item4 h2{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-family: osr;
+    font-size: 23px;
+    color: #4e525d;
+}
+.service-item4 p{
+    line-height: 26px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+    padding-bottom: 20px;
+}
+.service-item4 a{
+    font-size: 14px;
+    font-family: osr;
+    display:inline-block;
+    padding: 10px 15px;
+    background: #f34949;
+    border-radius: 3px;
+    color: #fff;
+}
+.hover{
+    transition: all linear .3s;
+}
+.hover:hover{
+    transform: translate(0px,-5px);
+    box-shadow: 0px 10px 10px rgba(243, 73, 73, 0.77);
+}
+/*=========== portfolio(menu) part css start===================*/
+.portfolio-bg{
+    width: 100%;
+    background: #f1f1f1;
+}
+.portfolio-header{
+    text-align: center;
+}
+.portfolio-item{
+    text-align: center;
+    width: 1140px;
+    padding-bottom: 51px;
+    background: #f1f1f1;
+}
+.portfolio-header h2{
+    padding-top: 35px;
+    padding-bottom: 53px;
+    font-size: 42px;
+    font-family: osr;
+    color: #4e525d;
+}
+.portfolio1{
+    position: relative;
+    width: 360px;
+    float: left;
+    padding-left: 0;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.overlay-menu{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background: rgba(243, 73, 73, 0.62);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.overlay-menu h2{
+    color: #fff;
+    font-size: 20px;
+    font-family: osr;
+}
+.overlay-menu p{
+    color: #fff;
+    font-size: 16px;
+    font-family: osr;
+}
+.portfolio1:hover .overlay-menu{
+    opacity: 1;
+    height: 50px;
+    
+}
+.portfolio2:hover .overlay-menu{
+    opacity: 1;
+    height: 50px;
+}
+.portfolio3:hover .overlay-menu{
+    opacity: 1;
+    height: 50px;
+}
+.portfolio2{
+    position: relative;
+    width: 360px;
+    margin: 0 15px;
+   margin-bottom: 30px;
+    float: left;
+    overflow: hidden;
+}
+.portfolio3{
+    position: relative;
+    width: 360px;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    float: left;
+    overflow: hidden;
+}
+.portfolio1 img{
+    width:100%; 
+    transition: all linear .3s;
+}
+.portfolio2 img{
+    width: 100%;
+    transition: all linear .3s;
+}
+.portfolio3 img{
+    width: 100%;
+    transition: all linear .3s;
+}
+.see-all-div{
+    padding-top: 18px;
+    padding-bottom: 51px;
+}
+.see-all-div a{
+    display: inline-block;
+    padding: 24px 42px;
+    background: #f34949;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 24px;
+    font-family: ossb;
+}
+/*================= portfolio (menu) part css end==============*/
+/*================== Team part css start===================*/
+.team-wrapper{
+    text-align: center;
+}
+.team-text h2{
+    padding-top: 80px;
+    font-size: 42px;
+    font-family: osr;
+    color: #4e525d;
+    padding-bottom: 126px;
+}
+.member1{
+    position: relative;
+    width: 210px;
+    height: 210px;
+    background: #eeeef0;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-right: 50px;
+    float: left;
+    overflow: hidden; 
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(243, 73, 73, 0.62);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.icon-info{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.icon-info i{
+    margin-top: 150px;
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+.member1:hover .overlay{
+    opacity: 1;
+}
+.member2:hover .overlay{
+    opacity: 1;
+}
+.member3:hover .overlay{
+    opacity: 1;
+}
+.member4:hover .overlay{
+    opacity: 1;
+}
+.member1 img{
+    width: 100%;
+}
+.member2 img{
+    width: 100%;
+}
+.member3 img{
+    width: 100%;
+}
+.member4 img{
+    width: 100%;
+}
+.member2{
+    position: relative;
+    text-align: center;
+    width: 210px;
+    height: 210px;
+    background: #eeeef0;
+    border-radius: 50%;
+    margin: 0 50px;
+    float: left;
+    overflow: hidden;
+}
+.member2 h3{
+    font-family: oseb;
+    font-size: 85px;
+    color: #f46d6d;
+    line-height: 200px;
+}
+.member3{
+    position: relative;
+    width: 210px;
+    height: 210px;
+    background: #eeeef0;
+    border-radius: 50%;
+    margin: 0 50px;
+    float: left;
+    overflow: hidden;
+}
+.member4{
+    position: relative;
+    width: 210px;
+    height: 210px;
+    background: #eeeef0;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-right: 0;
+    float: left;
+    overflow: hidden;
+}
+.member1-text{
+    padding-left: 0;
+    padding-right: 50px;
+    padding-top: 63px;
+     width: 210px;;
+    float: left;
+    padding-bottom: 110px;
+}
+.member1-text h3{
+    font-family: osr;
+    font-size: 22px;
+    color: #4e525d;
+}
+.member1-text p{
+    padding-top: 3px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+    padding-bottom: 15px;
+}
+.member1-text span{
+    line-height: 26px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+}
+.member2-text{
+    padding: 0 50px;
+    padding-top: 63px;
+     width: 210px;;
+    float: left;
+    padding-bottom: 110px;
+}
+.member2-text h3{
+    font-family: osr;
+    font-size: 22px;
+    color: #4e525d;
+}
+.member2-text p{
+    padding-top: 3px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+    padding-bottom: 15px;
+}
+.member2-text span{
+    line-height: 26px;
+    font-family: osr;
+    font-size: 14px;
+    color: #4e525d;
+}
+.member-text4{
+    padding-right: 0;
+}
+/*============= Team part css end===================*/
+
+/*======================= packge part css start===============*/
+.packge-bg{
+    width: 100%;
+    background: #f1f1f1;
+}
+.packge1{
+    padding-top: 119px;
+    padding-left: 0px;
+    padding-right: 10px;
+    width: 360px;
+    text-align: center;
+    float: left;
+    padding-bottom: 130px;
+}
+.one{
+    border: 1px solid #ecf0f1;
+    width: 100%;
+    background: #f34949;
+}
+.one p{
+    font-family: osr;
+    font-size: 26px;
+    line-height: 75px;
+}
+.two{
+    border: 1px solid #ecf0f1;
+    width: 100%;
+    background: #f8f9fb;
+}
+.two p{
+    font-family: osr;
+    font-size: 20px;
+    line-height: 68px;
+}
+.three{
+    border: 1px solid #ecf0f1;
+    width: 100%;
+    background: #fff;
+}
+.three p{
+    font-family: osr;
+    font-size: 14px;
+    line-height: 45px;
+}
+.nine{
+    padding: 29px 0;
+    width: 100%;
+    border: 1px solid #ecf0f1;
+    background: #f8f9fb;  
+    
+}
+.nine a{
+    display: inline-block;
+    padding: 12px 51px;
+    background: #788492;
+    font-family: ossb;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all linear .3s;
+}
+.nine a:hover{
+    background: #f34949;
+    transform: translate(0, -5px);
+    box-shadow: 0 10px 10px #f34949;
+}
+.packge2{
+    padding: 0 10px;
+    width: 360px;
+    text-align: center;
+    float: left;
+    padding-top: 119px;
+    padding-bottom: 130px;
+}
+.one2{
+    background: #49cbcd;
+    border: 1px solid #ecf0f1;
+    width: 100%;
+}
+.one2 p{
+    font-family: osr;
+    font-size: 26px;
+    line-height: 75px;
+}
+.nine1{
+    padding: 29px 0;
+    width: 100%;
+    border: 1px solid #ecf0f1;
+    background: #f8f9fb;
+}
+.nine1 a{
+    display: inline-block;
+    padding: 12px 51px;
+    background: #f34949;
+    font-family: ossb;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 3px;
+}
+.packge3{
+    padding-left: 10px;
+    padding-right: 0;
+    width: 360px;
+    text-align: center;
+    float: left;
+    padding-top: 119px;
+    padding-bottom: 130px;
+}
+/*================ packge part css end======================*/
+
+/*============ customer part css start======================*/
+.text{
+    padding-top: 135px;
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+.text h3{
+    padding-bottom: 24px;
+    font-family: osr;
+    font-size: 42px;
+    color: #4e525d;
+}
+.text p{
+    line-height: 32px;
+    font-size: 19px;
+    font-family: osr;
+    color: #4e525d;
+    padding-bottom: 23px;
+}
+.text span{
+    font-size: 21px;
+    font-family: osr;
+    color: #9a8faf;
+}
+/*====================================== customer part css end======================*/
+
+/*=========================================== contact/footer part css start==================*/
+.contact-bg{
+    position: relative;
+    width: 100%;
+    height: 685px;
+    background: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contact-text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 92px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-text p{
+    font-size: 42px;
+    font-family: osr;
+    color: #ffffff;
+}
+.contact-info{ 
+    position: absolute;
+    width: 485px;
+    text-align: left;
+    top: 253px;
+    left: 135px;
+}
+.contact-info h3{
+    font-size: 24px;
+    font-family: osr;
+    color: #ffffff;
+    padding-bottom: 3px;
+}
+.contact-info p{
+    font-size: 14px;
+    font-family: osr;
+    color: #ffffff;
+    padding-bottom: 38px;
+}
+.contact-info i{
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+.A{
+    background: #3b5997;
+    margin-left: 0;
+    margin-right: 5px;
+}
+.B{
+    background: #3ec2f3; 
+    margin: 0 5px;
+}
+.C{
+    background: #e44c41;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+.D{
+    transition: all linear .3s;
+}
+.D:hover{
+    background: transparent; 
+}
+.contact-info h4{
+    line-height: 23px;
+    font-size: 14px;
+    font-family: osr;
+    color: #bface2;
+}
+.input-div{
+    position: absolute;    
+    width: 620px;
+    text-align: left;
+    top: 255px;
+    right: 66px;
+}
+.box{
+    padding: 8px 0;
+    padding-left: 20px;
+    padding-right: 95px;
+    text-align: left;
+    border-radius: 3px;
+    
+}
+.X{
+    margin-right: 13px;
+    margin-bottom: 30px;
+}
+.Y{
+    margin-left: 13px;
+    margin-bottom: 30px;
+}
+.area{
+    text-align: left;
+    padding-left: 20px;
+    padding-top:  13px;
+    padding-right: 386px;
+    padding-bottom: 140px;
+    border-radius: 3px;
+}
+.shift{
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    top: 268px;
+    left: 374px;
+    
+}
+.input-div a{
+    font-size: osr;
+    font-size: 22px;
+    color: #fff;
+    display: inline-block;
+    text-align: right;
+    padding: 16px 55px;
+    background: #f34949;
+    border-radius: 3px;
+}
+.shift a{
+    transition: all linear .3s;
+}
+.shift a:hover{
+    transform: translate(0,-5px);
+}
+/*======== contact/footer part css end===============*/
+/*======== Login & reguister page  css start===============*/
+.header-text form input{
+    text-align: center;
+    width:300px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 3px;
+}
+.header-text form button{
+    margin-top: 18px;
+    width: 324px;
+    padding: 10px 10px;
+    background: #fff;
+    border: none;
+    color: #f34949;
+    border-radius: 3px;
+    transition: all linear .3s;
+}
+.header-text form button:hover{
+    background: #f34949;
+    color: #fff;
+    cursor: pointer;
+}
+.header-text .radio-btn{
+    width: 40px;
+    margin: 20px 0;
+}
+.header-text h4{
+    display: inline;
+    color: #fff;
+    font-family: osr;
+    font-size: 18px;
+}
+/*======== Login & register part css end===============*/
+
+

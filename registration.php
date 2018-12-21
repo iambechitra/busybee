@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PSD TO HTML</title>
+    <title>Registration</title>
     <link href="login.php">
     <link href="registration.php">
     <link rel="stylesheet" href="css/all.css">

@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin</title>
-    <link href="index.php">
+    <title>Registration</title>
+    <link href="login.php">
+    <link href="registration.php">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/registration.js"></script>
 </head>
 <body>
-   <!------------------- header part start------------------->
+   <!------------------- header part start------------------------->
     <div class="full-wrapper menu-bar">
         <div class="wrapper">
             <div class="logo">
@@ -30,23 +32,26 @@
             <div class="clr"></div>
         </div>
     </div>
-<!--    background & login part start -->
-     <div class="full-wrapper banner-bg">
+    <!------------------- header part end-------------------------> 
+      
+    <!------------------- banner & registration part start-------------------->
+    <div class="full-wrapper banner-bg" id="home">
         <div class="wrapper">
             <div class="header-text">
                 <h1>Resto<span>..</span></h1>
-                <p>Hello Admin! Add Product</p>
-                <form action="" method="post" name="add_product">
-                    <input type="text" placeholder="Product ID"><br>
-                    <input type="text" placeholder="Product name"><br>
-                    <input type="text" placeholder="price"><br>
-                    <input type="file"><br>
-                    <button type="submit" method="post" value="add_product_btn">Add</button>
+                <p>Book your reservation here<br></p>
+                
+                <form action="" method="post" name="rform" onsubmit="return validateForm()">
+                   <input type="text" name ="fname" placeholder="Enter Your First name"><br>
+                   <input type="text" name="lname" placeholder="Enter Your Last name"><br>
+                    <input type="date" name="date"><br>
+                    <input type="text" name="no_of_person" placeholder="Enter no of Person"><br>
+                     <input type="text" placeholder="Enter time of reservation"><br>
+                    <button type="submit" method="post" value="register">Reserve</button>
                 </form>
             </div>
         </div>
     </div>
-<!--    background & login part end-->
-    
+    <!------------ banner & registration part end----------->
     </body>
 </html>
